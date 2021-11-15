@@ -23,5 +23,5 @@ public class Album {
     @Column(name = "id")
     private Long id;
     private String title;
-    private Artist artist;
+    //private Artist artist;
 }
