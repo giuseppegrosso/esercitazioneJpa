@@ -1,15 +1,22 @@
 package it.plansoft.esercitazione_jpa.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * @author Giuseppe Grosso
  * @project esercitazione_jpa
  * @since 15/11/2021
  */
+@Entity(name = "Artist")
+@Table(name = "artists")
+@Data
+@NoArgsConstructor
+@ToString
 public class Artist {
 
     @Id
@@ -20,7 +27,7 @@ public class Artist {
     @Column(name = "name")
     private String name;
 
-//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "artist")
-//    private Set<Album> albumSet;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "artist")
+    private List<Album> albumSet;
 
 }

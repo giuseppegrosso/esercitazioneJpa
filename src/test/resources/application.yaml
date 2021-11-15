@@ -1,7 +1,7 @@
 # configurazione del server
 spring:
   profiles:
-    active: sqlite
+    active: test
     #active: sqlite
     #active: postgres
 

@@ -27,6 +27,7 @@ class AlbumRepositoryTest {
     @BeforeEach
     public void startup() {
         log.info("startup");
+        this.repo.save(new Album("mytitle"));
     }
 
     @AfterEach
@@ -38,13 +39,13 @@ class AlbumRepositoryTest {
     @Test
     public void itShouldFindByTitleOk()
     {
-        List<Album> albums = this.repo.findByTitle("Big Ones");
+        List<Album> albums = this.repo.findByTitle("mytitle");
 
         assertTrue(albums.size() > 0);
 
         Album rubrica = albums.get(0);
 
-        assertTrue(rubrica.getTitle().equals("Big Ones"));
+        assertTrue(rubrica.getTitle().equals("mytitle"));
 
     }
 }
