@@ -13,4 +13,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AlbumService extends BaseCrudService<AlbumRepository, IAlbumMapper, AlbumDto, Album, Long>{
+
+    public AlbumService(AlbumRepository repository) {
+        super(repository, IAlbumMapper.INSTANCE);
+    }
 }
