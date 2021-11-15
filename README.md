@@ -34,7 +34,7 @@ In this course i show you how to implements rest services, in particular
 
 ## Data Model
 
-The PostTag data model represents a digital media store, including tables for artists, albums, media tracks, invoices and customers.
+The esercitazioneJpa data model represents.
 
 ## How do I Download and Create the Post Database?
 
@@ -84,4 +84,4 @@ Notes:
 
 ## swagger catalog at 
 
-http://localhost:8090/esercitazioneJpa/swagger-ui/index.html?configUrl=/postTag/v3/api-docs/swagger-config#/tag-controller/findAll_1
+http://localhost:8090/esercitazioneJpa/swagger-ui/index.html?configUrl=/esercitazioneJpa/v3/api-docs/swagger-config#/tag-controller/findAll_1
