@@ -11,8 +11,8 @@ import javax.persistence.*;
  * @project esercitazione_jpa
  * @since 15/11/2021
  */
-@Entity(name = "Tag")
-@Table(name = "tag")
+@Entity(name = "Album")
+@Table(name = "albums")
 @Data
 @NoArgsConstructor
 @ToString

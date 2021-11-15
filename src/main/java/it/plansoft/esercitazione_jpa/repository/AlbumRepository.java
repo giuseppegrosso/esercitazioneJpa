@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -21,7 +22,7 @@ public interface AlbumRepository extends JpaRepository<Album, Long> {
      * @param title
      * @return
      */
-    Set<Album> findByTitle(String title);
+    List<Album> findByTitle(String title);
 
 
     //NATIVO
