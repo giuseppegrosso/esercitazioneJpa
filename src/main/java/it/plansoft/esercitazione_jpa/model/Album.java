@@ -20,8 +20,14 @@ public class Album {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "Album_Id")
     private Long id;
+
+
+    @Column(name = "Title")
     private String title;
-    //private Artist artist;
+
+//    @ManyToOne
+//    @Column(name = "Artist_Id")
+//    private Artist artist;
 }
