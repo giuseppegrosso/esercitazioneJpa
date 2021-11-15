@@ -16,7 +16,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @ToString
-public class Album {
+public class Album extends BaseId<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
