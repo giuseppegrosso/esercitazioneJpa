@@ -26,15 +26,15 @@ public interface AlbumRepository extends JpaRepository<Album, Long> {
 
 
     //NATIVO
-//    @Query("select a from Albums a where a.title = :title")
-//    Set<Album> findByTitleNativeQuery(@Param("title") String title);
+    @Query("select a from Album a where a.title = :title")
+    Set<Album> findByTitleNativeQuery(@Param("title") String title);
 
     /**
      * find by id artist
      * @param idArtist
      * @return
      */
-//    Set<Album> findByArtistId(Long idArtist);
+    Set<Album> findByArtistId(Long idArtist);
 
 
     /**
@@ -42,5 +42,5 @@ public interface AlbumRepository extends JpaRepository<Album, Long> {
      * @param name
      * @return
      */
-//    Set<Album> findByArtistName(String name);
+    Set<Album> findByArtistName(String name);
 }
